@@ -1,0 +1,86 @@
+:root{
+    --cor1:rgb(10,134,88);
+    --cor2:rgb(181, 231, 213);
+    --cor3:rgb(71, 36, 153);
+    --cor4:rgb(155, 187, 13);
+    --cor5:rgb(128, 23, 58);
+
+}
+* { /*Tira as bordas gerais dos lados*/
+    margin: 0; 
+    padding: 0;
+}
+
+.menu ul {
+    background-color: var(--cor2);    /*cor de fundo da tabela*/
+    list-style-type: none;   /*Tira as bolinhas*/
+    padding: 10px;   /*distancias entre as tabelas*/
+    margin: 0; /*edita as margins*/
+    text-align: center;  /*edita a posição do menu*/
+    margin-top: 30px; /*espaço no menu com relação ao topo da pagina*/
+    
+}
+
+.menu ul li{
+    display: inline; /*edita as posições da taba*/
+    position: relative;  /*edita as posições da taba*/
+}
+
+.menu ul li a {
+    color: var(--cor5);
+    font-family: Verdana; /*edita as fontes da letras*/
+    text-decoration: none; /*tira os underline*/
+    padding: 10px ; /*mexe na vertical da tabela*/
+    transition: background 0.5s;  
+}
+
+.menu ul li a:hover { /*coloca as caixas nas letras*/
+    color: var(--cor5);
+    font-family: Verdana; /*edita as fontes da letras*/
+    text-decoration: none; /*tira os underline*/
+    padding: 10px ; /*mexe na vertical da tabela*/ 
+    background-color: var(--cor4); 
+}
+/*sub menu  */
+.menu ul li ul { 
+    display: none; /*esconde a sub tabela*/ 
+    position: absolute;
+    left: 0;
+    width: 200px; /*largura da tabela*/
+    padding: 0px; /*preenche o quadrado do menu*/
+    margin-top: 10px; /*alinha a sub tabela*/
+
+}
+
+.menu ul li:hover ul { /*mostra a tabela dentro da tabela em produtos*/
+    display: block;
+
+}
+
+.menu ul li ul li { /*mostra a tabela em blocos, linhas*/
+    display: block;
+
+}
+
+.menu ul li ul li a { /*aqui é a ancora  */
+    display: block;
+    color: var(--cor1);
+    text-align: center; /*alinha o texto da tabela  */
+    font-family: Arial; /*na fonte da tabela em que nos estamos mexendo  */
+    
+}
+
+
+
+
+
+
+
+/*sub sub menu  */
+.menu ul li:hover ul li ul {
+    display: none;
+}
+
+.menu ul li ul li ul {
+    display: block;
+}

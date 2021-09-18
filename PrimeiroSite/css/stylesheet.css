@@ -1,0 +1,101 @@
+:root {
+    --cor1: #75648C;
+    --cor2: #A39BBF;
+    --cor3: #CDD973;
+    --cor4: #BFB3A4;
+    --cor5: #594940;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h3 {  
+    letter-spacing: 20px;
+    font-size: 52px;
+    background-color: var(--cor3);
+    text-align: center;
+    color: var(--cor1);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color: var(--cor1);
+
+}
+.menu ul {
+    font-size: 20px;
+    font-family:  Georgia;
+    list-style-type: none;
+    padding: 15px;
+    margin: 0px;
+    background-color: var(--cor1);
+    margin-top: 50;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a {
+    color: var(--cor3);
+    text-decoration:none;
+    padding: 15;
+}
+
+.menu ul li a:hover {
+    background-color: var(--cor5);
+    color:var(--cor3);
+    text-decoration:underline; /*Sobre a linha do menu*/
+    padding: 15px;
+}
+
+/*Aqui vai ser o sub menu*/
+.menu ul ul  {
+    display: none;
+    position: absolute; /* aqui mudou o menu pra localidade local*/
+    left: 0;
+    width: 300px;
+    margin-top: 15px;
+}
+.menu ul li:hover ul {
+    display: block;
+   
+}
+.menu ul ul li {
+    display: block;
+   
+}
+.menu ul ul li a {
+    display: block;
+    color: var(--cor4);
+    text-align: left;
+}
+.menu ul li ul li {  /* aqui é o menu de contato */
+    display: block;
+}
+.menu ul  li ul li a {  /* aqui é o menu de contato */
+    display: block;
+    color: var(--cor4);
+    text-align: left;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.tabela {
+    color: var(--cor5);
+    text-decoration:var(--cor5);
+    text-align: center;
+    padding: 20px;
+    background-color:var(--cor3);    
+}
+
+.linha {
+    background-color: var(--cor5);
+    padding: 2px;
+    width: 100%;    
+}
+
